@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adam Mckenzie Stag Party Details</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		/* CSS Here */
+		body {
+			padding: 2% 4%;
+		}
+
+		.happy {
+			display: none;
+			width: 90%;
+		}
+
+		.hesitate {
+			display: none;
+			width: 90%;
+		}
+
+		.happy iframe {
+			text-align: center;
+		}
+
+		.decline {
+			display: none;
+		}
+
+		.btn {
+			display: inline-block;
+			min-width: 8em;
+			font-size: 22px;
+			margin-top: 2.4em;
+			margin-right: 1.8em;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Adam Mckenzie Is Getting Married</h1>
+	<h2>Stag Party - 22nd February 2020</h2>
+	<h2>Wellington NZ</h2>
+	<h3>More info coming soon</h3>
+
+	<div class="happy">
+		<iframe src="https://giphy.com/embed/OMYj7otYRfCAo" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<h2>2020 will bring you wealth and fortune</h2>
+	</div>
+
+	<div class="hesitate">
+		<button type="button" class="btn btn-secondary try happy-btn">Try Again</button>
+		<iframe src="https://giphy.com/embed/NQL7Wuo2JSQSY" width="283" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<h2>2020 may be challenging</h2>
+	</div>
+
+	<div class="decline">
+		<button type="button" class="btn btn-secondary try happy-btn">Try Again</button>
+		<iframe src="https://giphy.com/embed/6GOH8PD8sF0dy" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<h2>2020 aint looking good for you</h2>
+	</div>
+
+	<iframe src="https://giphy.com/embed/NJPBmnDEbDEnm" width="480" height="276" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+	<iframe src="https://giphy.com/embed/YPBvdXHxANHHi" width="423" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+	<div>
+		<button type="button" class="btn btn-success ok happy-btn">I'm in</button>
+		<button type="button" class="btn btn-info ok hesitate-btn">Maybe</button>
+		<button type="button" class="btn btn-danger ok decline-btn">Sorry can't make it</button>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script>
+		// Custom js Here
+		$('.happy-btn').on('click', function  (){
+			$('.happy').show(2000);
+			$('.hesitate').hide();
+			$('.decline').hide();
+		});
+
+		// Custom js Here
+		$('.hesitate-btn').on('click', function  (){
+			$('.hesitate').show(2000);
+			$('.happy').hide();
+			$('.decline').hide();
+		});
+
+		// Custom js Here
+		$('.decline-btn').on('click', function  (){
+			$('.decline').show(2000);
+			$('.hesitate').hide();
+			$('.happy').hide();
+		});
+
+		// Custom js Here
+		$('.try').on('click', function  (){
+			$('.decline').hide();
+			$('.hesitate').hide();
+			$('.happy').hide();
+		});
+
+	</script>
+</body>
+</html>
